@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="javascript.js"></script>
+		<title>EVDCS</title>
+		<script type="text/javascript">
+			$i=1;
+			$j=1;
+			$k=0;
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="home_div">
+				<h3>EVDCS</h3>
+      		    <span onclick="oc_sidebar()"><strong>&#9776;</strong></span>
+			</div>
+			
+      		<nav>
+      			<ul>    
+      				<li>Assignment</li>
+      				<li>Static Infos</li>
+      				<li>Attendace</li>
+      				<li>Deployment</li>
+      			</ul>
+      		</nav>
+
+      		<div onclick="oc_loggedUser()" class="logged_user">
+      			<img src="da.webp">
+      			<p>Dame Hirpa</p>
+
+      			<div id="logged_user_dropdown">
+      				<button class="profile">Profile</button>
+      				<button class="logout">Logout</button>
+      		    </div>
+      		</div>
+
+      		<div onclick="oc_notificationbar()" class="notification_icon">
+      			<p>Notification...</p>
+      			<p class="no_of_unread_notifications">(5)</p>
+      		</div>
+		</header>
+		<div id="sidebar">
+			<ul>
+		      <h4>Main</h4>
+		      <li><a href="#">Take attendance</a></li>
+		      <li><a href="#">Register driver</a></li>
+		      <li><a href="#">View deployment</a></li>
+		      <li><a href="#">View drivers</a></li>
+		      <li><a href="#">Regster user</a></li>
+		      <h4>Other</h4>
+		      <li><a href="#">Profile</a></li>
+		      <li><a href="#">Setting</a></li>
+		      <li><a href="#">Help</a></li>
+
+            </ul>
+		</div>
+	    <main>
+	    	<table>
+	    		<tr class="table_header">
+					<th>Name</th>
+					<th>Vehicle Seal No</th>
+					<th>route name</th>
+					<th>route type</th>
+					<th colspan="2">operation</th>
+				</tr>
+	    	</table>
+	    	<table class="first_raw">
+				<tr>
+					<td >whitney</td>
+					<td >karasaveda</td>
+					<td >This is us</td>
+					<td >karasaveda</td>
+					<td ><button class="operation_btn">edit</button></td>
+					<td ><button class="operation_btn">delete</button></td>
+				</tr>
+				<tr>
+					<td>whitney</td>
+					<td>karasaveda</td>
+					<td>This is us</td>
+					<td>karasaveda</td>
+					<td><button class="operation_btn">edit</button></td>
+					<td><button class="operation_btn">delete</button></td>
+				</tr>
+				<tr class="gray">
+					<td>whitney</td>
+					<td>karasaveda</td>
+					<td>This is us</td>
+					<td>karasaveda</td>
+					<td><button class="operation_btn">edit</button></td>
+					<td><button class="operation_btn">delete</button></td>
+				</tr>
+				<tr>
+					<td>whitney</td>
+					<td>karasaveda</td>
+					<td>This is us</td>
+					<td>karasaveda</td>
+					<td><button class="operation_btn">edit</button></td>
+					<td><button class="operation_btn">delete</button></td>
+				</tr>
+				<tr class="gray">
+					<td>whitney</td>
+					<td>karasaveda</td>
+					<td>This is us</td>
+					<td>karasaveda</td>
+					<td><button class="operation_btn">edit</button></td>
+					<td><button class="operation_btn">delete</button></td>
+				</tr>
+				<tr>
+					<td>whitney</td>
+					<td>karasaveda</td>
+					<td>This is us</td>
+					<td>karasaveda</td>
+					<td><button class="operation_btn">edit</button></td>
+					<td><button class="operation_btn">delete</button></td>
+				</tr>
+				<tr class="gray">
+					<td>whitney</td>
+					<td>karasaveda</td>
+					<td>This is us</td>
+					<td>karasaveda</td>
+					<td><button class="operation_btn">edit</button></td>
+					<td><button class="operation_btn">delete</button></td>
+				</tr>
+				<tr>
+					<td>whitney</td>
+					<td>karasaveda</td>
+					<td>This is us</td>
+					<td>karasaveda</td>
+					<td><button class="operation_btn">edit</button></td>
+					<td><button class="operation_btn">delete</button></td>
+				</tr>
+				<tr class="gray">
+					<td>whitney</td>
+					<td>karasaveda</td>
+					<td>This is us</td>
+					<td>karasaveda</td>
+					<td><button class="operation_btn">edit</button></td>
+					<td><button class="operation_btn">delete</button></td>
+				</tr>
+				<tr>
+					<td>whitney</td>
+					<td>karasaveda</td>
+					<td>This is us</td>
+					<td>karasaveda</td>
+					<td><button class="operation_btn">edit</button></td>
+					<td><button class="operation_btn">delete</button></td>
+				</tr>	
+	        </table>
+
+	        <!-- <form>
+				<h3>Form</h3>
+				<div class="form_div">
+					<label>name1</label>
+					<input type="" name="">
+				</div>
+				<div class="form_div">
+					<label>name1</label>
+					<input type="" name="">
+				</div>
+				<div class="form_div">
+					<label>name1</label>
+					<input type="" name="">
+				</div>
+				<div class="form_div">
+					<label>name1</label>
+					<input type="" name="">
+				</div>
+				<div class="form_div">
+					<label>name1</label>
+					<input type="" name="">
+				</div>
+				<div class="form_div">
+					<label>name1</label>
+					<input type="" name="">
+				</div>
+				<div class="form_div">
+					<label>name1</label>
+					<input type="" name="">
+				</div>
+				<button class="form_submit">Save</button>
+	        </form> -->
+	    </main>
+	    <div id="notificationbar">
+	    	<ul>
+	          <li><a href="#">2 drivers have requested atttendance</a></li>
+	          <hr>
+	          <li><a href="#">The assignment is working in 86%.other subcities might use your help</a></li>
+	          <hr>
+	          <li><a href="#">driver a have made his 3rd rejection to an assignment in this month. review his reason</a></li>
+	          <hr>
+	          <li><a href="#">deployment will be made in 2 days</a></li>
+	          <hr>
+	          <li><a href="#">user a is approved by the central beauro</a></li>
+	          <hr>
+	          <li class="view_notification"><a href="#">view all notifications...</a></li>
+        </ul>
+	    </div>
+	    <footer><p>EVDCS@2020_All Rigts Reserved</p></footer>
+	</body>
+</html>
