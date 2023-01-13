@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Setting</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/setting.css">
+    <link rel="stylesheet" href="styles/footer.css">
+  </head>
+  <body>
+    <header>
+      <div class="current-date-box">
+        <a class="home-link" href="index.html">
+          <img src="icons/home.svg" alt="">
+        </a>
+        <!-- <img src="icons/date_range.svg" alt=""> -->
+        <p class="current-date">
+          Tuesday 3/12/2022
+        </p>
+      </div>
+      <p class="daily-quote ">
+        A good day to be productive!
+      </p>
+      <div class="right-section">
+        <a class="active" href="setting.html">Setting</a>
+        <a href="report.html">Report</a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <!-- create new session button  start -->
+        <button id="create-session-button" class="create-session-button">Create new Session</button>
+        <!-- create new session button end -->
+        
+        <!-- Create session -->
+        <div id="create-session-container" class="create-session-container overlay-window ">
+          <div id="create-session-background" class="create-session-background overlay-window-background">
+          </div>
+          <div class="create-session-content overlay-window-content">
+            <p class="overlay-window-title">New session</p>
+          <div class="session-type">
+            <p class="type-label">Name: </p>
+            <input type="text">
+          </div>
+          <table>
+            <tr>
+              <th>Description</th>
+              <th>Duration</th>
+              <th>Massage</th>
+            </tr>
+            <tr>
+              <td><input type="text"></td>
+              <td><input class="duration-input" type="text"></td>
+              <td><input type="text"></td>
+              <td class="add-icon">
+                <img src="icons/add.svg" alt="">
+                <span class="add-raw-tooltip tooltip">Add raw</span>
+              </td>
+            </tr>
+          </table>
+          <div>
+            <button class="save-button">Save</button>
+            <button class="clear-button">Clear</button>
+          </div>
+          </div>
+        </div>
+        <!-- Create session end -->
+
+        <!-- Existing session start -->
+        <div class="existing-sessions-coantainer">
+          <p class="top-title title">Existing sessions</p>
+          <div class="existing-sessions">
+            <!-- editable/session start -->
+            <div id="session-optionally-editable-1" class="session-optionally-editable">
+              <div class="first-raw">
+                <div class="type">
+                  <p>Name: </p>
+                  <input value="Normal">
+                </div>
+                <div>
+                  <Button  id="edit-button-1" class="edit-session-button">Edit</Button>
+                  <button id="cancel-button-1" class="cancel-button">X</button>
+                </div>
+              </div>
+              <table>
+                <tr>
+                  <th>Description</th>
+                  <th>Duration</th>
+                  <th>Massage</th>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Break">
+                  </td>
+                  <td class="duration">
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="5" type="number" max="55" min="00">
+                  </td>
+                  <td>
+                    <input type="" value="Enjoy your na">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">                 
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">                 
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input  type="" value="Break">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="5" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input  type="" value="Enjoy your na">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                 <!-- final raw -->
+                 <tr class="final-raw">
+                  <td>
+                    Total
+                  </td>
+                  <td class="final-raw-hours">
+                    3 HRs
+                  </td>
+                  <td>
+                    <input type="" value="Good Job!">
+                  </td>
+                </tr>
+                <!-- final raw -->
+              </table>
+              <div class="action-buttons-container">
+                <button id="save-button-1" class="save-button">Save</button>
+              </div>
+            </div>
+
+            <div id="session-optionally-editable-2" class="session-optionally-editable">
+              <div class="first-raw">
+                <div class="type">
+                  <p>Name: </p>
+                  <input value="Normal">
+                </div>
+                <div>
+                  <Button  id="edit-button-2" class="edit-session-button">Edit</Button>
+                  <button id="cancel-button-2" class="cancel-button">X</button>
+                </div>
+              </div>
+              <table>
+                <tr>
+                  <th>Description</th>
+                  <th>Duration</th>
+                  <th>Massage</th>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">                 
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Break">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="5" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Enjoy your na">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Break">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="5" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Enjoy your na">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                 <!-- final raw -->
+                 <tr class="final-raw">
+                  <td>
+                    Total
+                  </td>
+                  <td class="final-raw-hours">
+                    3 HRs
+                  </td>
+                  <td>
+                    <input type="" value="Good Job!">
+                  </td>
+                </tr>
+                <!-- final raw -->
+              </table>
+              <div class="action-buttons-container">
+                <button id="save-button-2" class="save-button">Save</button>
+              </div>
+            </div>
+
+            <div id="session-optionally-editable-3" class="session-optionally-editable">
+              <div class="first-raw">
+                <div class="type">
+                  <p>Name: </p>
+                  <input value="Normal">
+                </div>
+                <div>
+                  <Button  id="edit-button-3" class="edit-session-button">Edit</Button>
+                  <button id="cancel-button-3" class="cancel-button">X</button>
+                </div>
+              </div>
+              <table>
+                <tr>
+                  <th>Description</th>
+                  <th>Duration</th>
+                  <th>Massage</th>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">                 
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Break">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="5" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Enjoy your na">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Break">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="5" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Enjoy your na">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                <tr>
+                  <td>
+                    <input type="" value="Study">
+                  </td>
+                  <td class="duration">
+                    
+
+                    <input value="0" type="number" max="3" min="0">
+                    <span>:</span>
+                    <input step="5" value="20" type="number" max="55" min="00">
+
+                  </td>
+                  <td>
+                    <input type="" value="Look away">
+                  </td>
+                  <td class="add-button"><img  src="icons/add.svg" alt=""></td>                </tr>
+                 <!-- final raw -->
+                 <tr class="final-raw">
+                  <td>
+                    Total
+                  </td>
+                  <td class="final-raw-hours">
+                    3 HRs
+                  </td>
+                  <td>
+                    <input type="" value="Good Job!">
+                  </td>
+                </tr>
+                <!-- final raw -->
+              </table>
+              <div class="action-buttons-container">
+                <button id="save-button-3" class="save-button">Save</button>
+              </div>
+            </div>
+            <!-- editable/session end -->
+          </div>
+        </div>
+        <!-- Existing session end -->
+      </section>
+    </main>
+    <footer>
+      @da 2022 Alarm app
+    </footer>
+
+    <script src="javascript/setting.js"></script>
+
+  </body>
+</html>

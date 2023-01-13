@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/footer.css">
+  </head>
+  <body>
+    <header>
+      <div class="current-date-box">
+        <a class="home-link" href="index.html">
+          <img src="icons/home.svg" alt="">
+        </a>
+        <!-- <img src="icons/date_range.svg" alt=""> -->
+        <div class="current-date">
+          <p>Tuesday</p> 
+          <p>3/12/2022</p>
+        </div>
+      </div>
+      <div>
+
+      </div>
+
+      <div class="daily-quote">
+        <p class="daily-quote-highlite">
+          A good day to be productive!  A good day to be productive! A good day to be productive!
+        </p>
+        <p class="daily-quote-all">
+          A good day to be productive!  A good day to be productive! A good day to be productive!
+        </p>
+      </div>
+  
+      <div class="right-section">
+        <a href="setting.html">Setting</a>
+        <a href="report.html">Report</a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <!-- Dispaly Goal start -->
+        <div class="goal">
+          <h3 class="goal-label">TODAY'S GOAL</h3>
+          <button id="goal-duration" class="goal-duration">
+            8:00 Hrs
+            <span class="goal-duration-tooltip tooltip">Edit Goal</span>
+          </button>
+          <!-- clicking on goal duration should display edit goal window! -->
+        </div>
+        <!-- Display Goal end -->
+        <div class="section-middle-section">
+          <!-- Current session start -->
+          <div class="current-session">
+            <p class="current-session-title">Current session</p>
+            <div class="session-description">
+              <div class="type">
+                <p>Type: </p> 
+                <p>Normal</p>
+              </div>
+              <div class="now">
+                <p>Now: </p>
+                <p> Studying</p>
+                <div class="count-down-container progress-box">
+                  <div class="count-down current-progress">15 min
+                  </div>
+                </div>
+                <p>20 min</p>
+              </div>
+              <div class="next">
+                <p>Next: </p>
+                <p> Rest for </p>
+                <p> 5 min</p>
+              </div>
+            </div>
+            <div class="session-control-buttons">
+              <button class="pause-button">Pause</button>
+              <button class="continue-button">Continue</button>
+              <button class="stop-button">Stop</button>
+            </div>
+          </div>
+          <!-- Current Session end -->
+
+          <!-- Goal Progress start -->
+          <div class="progress-container">
+            <p class="progress-title">Progress so far</p>
+            <div class="progress-bar progress-box">
+              <div class="progress current-progress">4:30 Hrs</div>
+            </div>
+            <p class="percentage-label">60%</p>
+          </div>
+          <!-- Goal Progress end -->
+        </div>
+
+        <!-- Editing Goal start -->
+        <div id="edit-goal" class="edit-goal overlay-window">
+          <div id="edit-goal-background" class="edit-goal-background overlay-window-background">
+          </div>
+          <div class="edit-goal-content overlay-window-content">
+            <div class="overlay-window-title">
+              <p>Edit Goal</p>
+            </div>
+            <div class="time">
+              <input min="0" max="24" class="goal-input" type="number" placeholder="8">
+              <p class="column">:</p>
+              <input min="0" max="55" step="5" onchange="if(this.value.length<2)this.value='0'+this.value" class="goal-input" type="number" placeholder="00">
+            </div>
+            <div class="options">
+              <button class="save-button">
+                <img src="icons/save.svg" alt="">
+                <span>Save</span>
+              </button>
+              <button id="cancel-button" class="cancel-button">
+                <img src="icons/cancel.svg" alt="">
+                <span>Cancel</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Editing Goal end -->
+
+        <!-- Start new session start -->
+        <div class="start-new-session-container">
+          <h3 class="title">Start a new session</h3>
+          <div class="choose-session-type">
+            <p>Type: </p>
+            <select name="" id="">
+              <option value="">Normal</option>
+              <option value="">Short</option>
+              <option value="">Long</option>
+            </select>
+          </div>
+          <button class="start-button">Start</button>
+        </div>
+        <!-- Start new session end -->
+      </section>
+      <!-- <section class="image-section">
+      </section> -->
+    </main>
+    <footer>
+      @da 2023 Alarm app
+    </footer>
+    <script src="javascript/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Report</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/report.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <script src="javascript/Chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="current-date-box">
+        <a class="home-link" href="index.html">
+          <img src="icons/home.svg" alt="">
+        </a>
+        <!-- <img src="icons/date_range.svg" alt=""> -->
+        <p class="current-date">
+          Tuesday 3/12/2022
+        </p>
+      </div>
+      <p class="daily-quote">
+        A good day to be productive!
+      </p>
+      <div class="right-section">
+        <a href="setting.html">Setting</a>
+        <a class="active" href="report.html">Report</a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <!-- pick a date range start -->
+        <div class="date-picker-box">
+          <p class="pick-date-label">pick a date range to see the report for:</p>
+          <div class="date-picker-container_new">
+            <div class="pick-date-container">
+              <p>From</p>
+              <input class="start-date" type="date">
+              <p class="to-text">To</p>
+              <input type="date">
+              <button>Show report</button>
+            </div>
+          </div>
+        </div>
+        <!-- pick a date range end -->
+
+        <div class="report">
+          <!-- report in table format start-->
+          <div class="table-report-container">
+            <table>
+              <tr class="label-raw">
+                <th>Date</th>
+                <th>Hrs. Studied</th>
+                <th>Goal in Hr.</th>
+                <th>% Achived</th>
+              </tr>
+              <tr>
+                <td>12/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>13/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>14/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>15/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>16/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>17/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>18/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>19/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>20/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>21/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>20/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>21/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>20/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>21/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>20/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>21/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>20/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>21/8/2022</td>
+                <td>5</td>
+                <td>8</td>
+                <td>75</td>
+              </tr>
+            
+            </table>
+          </div>
+          <!-- report in table format end -->
+
+          <!-- report in graph form start -->
+          <div class="chart-container">
+            <canvas id="report-chart">
+            </canvas>
+          </div>
+          <!-- report in graph form end -->
+        </div>
+      </section>
+    </main>
+
+    <script>
+      var dates=["12/8/2022","13/8/2022","14/8/2022","15/8/2022","16/8/2022","17/8/2022","18/8/2022","19/8/2022"];
+      var hours_studied=[5,3,6,8,10,3,5,5,7,2];
+      new Chart("report-chart", {
+        type:"line",
+        data:{
+          labels:dates,  //x-axis data
+          datasets:[{
+            labels:"Line Chart",
+            data:hours_studied, // y- axis data
+            fill: false,
+            // borderColor:'black',
+          }]
+        },
+      });
+    </script>
+    <footer>
+      @da 2023 Alarm app
+    </footer>
+  </body>
+</html>
