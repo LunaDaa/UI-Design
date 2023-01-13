@@ -1,0 +1,266 @@
+/* body {
+  background-image: url("/images/images4.jpeg");
+} */
+/* Display Goal Style start */
+.goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.goal-label {
+  margin-right: 5px;
+  margin-bottom: 10px;
+  font-style: italic;
+  /* font-weight: bold; */
+  /* font-size: 20px; */
+}
+.goal-duration {
+  font-size: 30px;
+  background-color: white;
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: white;
+  position: relative;
+}
+.goal-duration-tooltip {
+  width: 120px;
+}
+.goal-duration:hover .goal-duration-tooltip {
+  display: block;
+}
+/* Display Goal Style end */
+
+/* Editing goal start */
+.edit-goal-content {
+  width: 200px;
+  height: 200px;
+  top: 20%;
+  left: 40%;
+}
+.edit-goal .time {
+  display: flex;
+  margin-bottom: 60px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.column{
+  font-size: 35px;
+  font-family: bold;
+}
+.goal-input { 
+  width: 50px;
+  font-size: 20px;
+  border: none;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.151);
+}
+.goal-input:focus {
+  outline: none;
+}
+.options {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.save-button,
+.cancel-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.save-button {
+  background-color:var(--main-color);
+  color: white;
+}
+.cancel-button{
+  background-color: rgb(245, 245, 245);
+  color: black;
+}
+.save-button img,
+.cancel-button img{
+  height: 20px;
+  margin-right: 2px;
+}
+/* Edit goal display options */
+
+.edit-goal{
+  display: none;
+}
+/* Editing Goal end */
+
+.section-middle-section {
+  display: flex;
+  width: 790px;
+}
+
+/* Current session style start */
+.current-session {
+  flex: 1;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.session-description {
+  margin-bottom: 10px;
+}
+.type {
+  display: flex;
+  margin-bottom: 10px;
+}
+.now {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.count-down-container {
+  width: 100px;
+  height: 19px;
+  margin-left: 20px;
+
+  /* background-color: rgb(212, 212, 212);*/
+  border-radius: 3px; 
+}
+.count-down {
+  width: 75%;
+  height:100%;
+  font-size: 14px;
+
+  /* background-color: green;
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  display: flex;
+  margin-bottom: 5px;
+}
+.pause-button,
+.continue-button,
+.stop-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.pause-button {
+  background-color: rgb(170, 170, 170);
+}
+.continue-button {
+  background-color: green;
+  color: white;
+}
+.stop-button {
+  background-color: rgb(206, 42, 42);
+  color: white;
+}
+
+/* Display either pause or continue buttons */
+/* .pause-button {
+  display: none;
+}
+.stop-button {
+  display: none;
+} */
+.continue-button {
+  display: none;
+}
+
+/* display or hide current session */
+/* .current-session {
+  display: none;
+} */
+/* Current session style end */
+
+/* Goal progress style start */
+.progress-container,
+.current-session,
+.start-new-session-container {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.progress-container {
+  flex: 1;
+}
+.progress-title,
+.current-session-title{
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.progress-bar {
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.progress {
+  width: 43%;
+  height: 100%;
+  align-items: center;
+  border-radius: 5px 0 0 5px;
+}
+.percentage-label{
+  display: inline-block;
+}
+/* Goal progress style end */
+
+/* Start new session style start */
+.start-new-session-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  /* justify-content: center; */
+}
+.start-new-session-container .title {
+  margin-bottom: 10px;
+}
+.choose-session-type {
+  display: flex;
+  margin-bottom: 15px;
+}
+.choose-session-type p {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.choose-session-type select {
+  /* border: none; */
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+  font-size: 16px;
+}
+.choose-session-type select:focus {
+  outline: none;
+}
+.start-button {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  /* width: 100px; */
+}
+/* Start new session style end */
+
+/* image section start */
+.image-section{
+  background-image: url("/images/images10.jpeg");
+  width: 300px;
+}
+/* image section end */

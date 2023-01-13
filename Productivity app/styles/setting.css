@@ -1,0 +1,162 @@
+/* main {
+} */
+/* create new session button start */
+.create-session-button {
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+ /* create new session button start  */
+
+ /* create session overlay start */
+ .create-session-background {
+  background-color: rgba(78, 75, 75, 0.7);
+ }
+ .create-session-content {
+  top: 10%;
+  left: 25%;
+ }
+.create-session-container table {
+  width: 600px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.create-session-container th {
+  padding-bottom: 10px;
+}
+.create-session-container input {
+  border-radius: 7px;
+}
+.duration-input{
+  width: 60px;
+}
+.create-session-container input:focus {
+  outline: none;
+}
+.create-session-container button {
+  padding: 8px 30px;
+  font-size: 15px;
+}
+.create-session-container .save-button {
+  margin-right: 20px;
+}
+.create-session-container .clear-button {
+  background-color: rgb(102, 102, 102);
+}
+.create-session-container .session-type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.create-session-container .type-label{
+  margin-right: 5px;
+}
+.add-icon {
+  position:relative;
+  cursor: pointer;
+}
+.add-raw-tooltip {
+  width: 70px;
+  background-color: rgba(0, 0, 0, 0.299);
+  left: -15px;
+}
+.add-icon:hover .add-raw-tooltip{
+  display: block;
+}
+.create-session-container {
+  display: none;
+}
+ /* create session overlay end */
+
+/* Existing sessions start */
+.existing-sessions {
+  /* width: 100vw; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 570px 570px;
+  margin-bottom: 15px;
+  column-gap: 60px;
+  row-gap: 40px;
+}
+.existing-sessions-coantainer .top-title {
+  border-top: 1px solid rgb(221, 221, 221);
+  padding-top: 10px;
+  margin-top: 5px;
+}
+.first-raw {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.first-raw .type {
+  margin-right: 300px;
+}
+.type {
+  display: flex;
+}
+.final-raw {
+  background-color: rgb(223, 223, 223);
+}
+.final-raw td{
+  padding-top: 9px;
+}
+.final-raw-hours{
+  font-weight: bold;
+}
+/* Existing sessions end */
+
+/* session optionally editable start */
+
+.session-optionally-editable input:disabled{
+  color: black;
+  background-color: white;
+  box-shadow: none;
+}
+
+.session-optionally-editable .type {
+  align-items: center;
+  margin-bottom: 10px;
+}
+.session-optionally-editable .type p{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.session-optionally-editable td {
+  padding: 5px;
+}
+.session-optionally-editable input {
+  width: 114px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+} 
+.session-optionally-editable .duration input{
+  width: 30px;
+}
+
+.session-optionally-editable .action-buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-right: 55px;
+}
+.session-optionally-editable .save-button {
+  width: 100px;
+  padding: 5px 0;
+  font-size: 16px;
+}
+.session-optionally-editable .edit-button{
+  height: 30px;
+}
+.session-optionally-editable .cancel-button{
+  /* padding: 0px 5px; */
+  background-color: rgba(0, 0, 0, 0.603);
+  box-shadow: none;
+  height: 30px;
+  /* font-weight: bold;
+  border-radius: 4px; */
+}
+.session-optionally-editable.cancel-button p{
+  padding: 0;
+}
+
+/* session optionally editable end */

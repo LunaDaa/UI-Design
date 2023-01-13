@@ -1,0 +1,125 @@
+main {
+  text-align: center;
+}
+/* *{
+  box-sizing: border-box;
+} */
+/* pick a date range start */
+.date-picker-box {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 10px;
+}
+.pick-date-label {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.pick-date-container{
+  display: flex;
+  /* justify-content: space-between;
+  width: 400px; */
+  margin-bottom: 20px;
+  align-items: center;
+}
+.pick-date-container p {
+  /* font-size: 18px; */
+  margin-right: 10px;
+}
+.pick-date-container input {
+  margin-right: 20px;
+}
+.date-picker-box input{
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow:  0 0 5px rgba(0, 0, 0, 0.15);
+}
+.date-picker-box input:focus {
+  outline: none;
+}
+/* pick a date range end */
+
+.report{
+  display: flex;
+  width: 90vw;
+  height: 380px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+/* report in table format start */
+.table-report-container {
+  height: 100%;
+  flex: 1;
+  margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  overflow-y: scroll;
+  /* hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* for IE, Edge  */
+  scrollbar-width: none; /* for Firefox  */
+}
+/* hide scrollba for Chrome, Safari, Opera */
+.table-report-container::-webkit-scrollbar{
+  display: none;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border-collapse: collapse;
+  font-size: 14px;
+
+}
+/* table tr {
+  border-bottom: 0.5px solid rgb(224, 224, 224);
+} */
+table .label-raw {
+  position: sticky;
+  top: 0;
+  font-size: 16px;
+  /* background-color:rgb(65, 161, 190); */
+  /* background-color:rgb(180, 180, 180); */
+  background-color: white;
+  /* color:white; */
+}
+table .label-raw th{
+  padding-bottom: 10px;
+  padding-top: 15px;
+  /* border-bottom: 2px solid rgb(224, 224, 224); */
+}
+/* table tr:nth-child(even) {
+  background-color: rgb(243, 243, 243);
+} */
+table td {
+  /* padding-right: 50px; */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 0.5px solid rgb(224, 224, 224);
+}
+/* report in table format end */
+
+
+/* report in graph form start */
+.chart-container {
+  flex: 1;
+  height: 100%;
+  background-color: white;
+  border-radius: 8px;
+  /* padding: 10px; */
+  /* vertical-align: bottom; */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+}
+.report-chart {
+  vertical-align: bottom;
+}
+
+/* report in graph form start */

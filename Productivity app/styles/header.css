@@ -1,0 +1,117 @@
+/* Header Style start */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* max-height: 98px; */
+  padding: 10px 40px 5px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  background-color: white;
+ } 
+ a {
+  border-radius: 10px;
+ }
+ .home-link {
+ display: flex;
+ justify-content: center;
+ margin-right: 15px;
+ padding: 5px;
+ }
+.home-link img {
+  height: 35px;
+  text-align: center;
+}
+.current-date-box {
+  display: flex;
+  align-items: center;
+}
+@media(max-width:620px){
+  header{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .current-date {
+    display: none;
+  }
+}
+.current-date {
+  font-size: 18px;
+}
+.daily-quote {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--main-color);
+  max-width: 700px;
+  max-height: 70px;
+
+  position: relative;
+}
+.daily-quote-highlite {
+  /* font-size: 25px; */
+
+  background-color: white;
+
+  
+  /* max-width: 700px;
+  max-height: 70px; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  /* font-weight: bold;
+  font-style: italic; */
+  /* color: var(--main-color); */
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+.daily-quote-all{
+  background-color: rgb(233, 233, 233);
+  padding: 20px;
+  width: 650px;
+  border-radius:10px;
+
+  display: none;
+
+  position: absolute;
+  top: -25px;
+  left: -450px;
+}
+.daily-quote:hover .daily-quote-all {
+  display: block;
+}
+.daily-quote:hover .daily-quote-highlite {
+  display: none;
+}
+
+.right-section {
+  flex-shrink: 0;
+}
+.right-section a{
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  /* font-size: 2px; */
+  /* font-weight: bold; */
+  margin-left: 20px;
+}
+header a:hover {
+  background-color: rgba(206, 206, 206, 0.425);
+  color: black;
+}
+.right-section .active {
+  background-color: var(--main-color);
+  color: white;
+}
+.right-section .active:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+/* Header Style end */
+/* @media() */
+
